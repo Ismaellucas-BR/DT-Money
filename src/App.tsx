@@ -1,9 +1,8 @@
-import Header from "./components/Header";
-
+import Transactions from "./pages/transactions/Index";
 function App() {
   return (
     <h1 className="">
-      <Header />
+      <Transactions />
     </h1>
   );
 }
