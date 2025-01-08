@@ -34,3 +34,23 @@ tr td:last-child {
   border-top-right-radius: 0.375rem;
   border-bottom-right-radius: 0.375rem;
 }
+@layer components {
+  .inputFormPopup {
+    @apply rounded-md border-0 bg-base-gray-90 text-base-gray-30 p-4 placeholder:text-base-gray-50;
+  }
+  .transactionTypeButton {
+    @apply flex justify-center items-center bg-base-gray-70 p-4 gap-2 rounded-md cursor-pointer border-0 text-base-gray-30;
+  }
+  .income {
+    @apply text-green-green-30;
+  }
+  .outcome {
+    @apply text-red-red-30 peer-aria-checked:text-white;
+  }
+  button[data-state="checked"] svg {
+    @apply text-white;
+  }
+  button[data-state="unchecked"] {
+    @apply hover:bg-base-gray-60 transition-colors;
+  }
+}
